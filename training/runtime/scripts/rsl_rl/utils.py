@@ -1,4 +1,4 @@
-# base version: IsaacLab/source/isaaclab_rl/isaaclab_rl/rsl_rl/exporter.py
+# Derived from isaac-sim/IsaacLab isaaclab_rl/rsl_rl/exporter.py at 37ddf626871758333d6ed89cf64ad702aef127d0.
 
 import copy
 import os

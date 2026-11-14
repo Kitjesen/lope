@@ -17,17 +17,20 @@
 
 完整已安装包记录见 [environment_snapshot.json](environment_snapshot.json)。这是一份来源记录，不能直接把其中所有版本当成新环境的安装清单。
 
-`runtime/` 来自实际服务器源码快照，包含自定义 SmallDog、MoE-CTS、奖励、课程和脚本。`IsaacLab/` 包含对应的源码和应用配置。没有把服务器虚拟环境、GPU 驱动、Isaac Sim 专有运行库或所有上游机器人资产复制进 Git。
+`runtime/` 来自实际服务器源码快照，包含自定义 SmallDog、MoE-CTS、奖励、课程和脚本。Isaac Lab 框架不再放在本仓库里；历史 R6 复现请检出上游 [isaac-sim/IsaacLab](https://github.com/isaac-sim/IsaacLab) 的 commit `37ddf626871758333d6ed89cf64ad702aef127d0`。没有把服务器虚拟环境、GPU 驱动、Isaac Sim 专有运行库或所有上游机器人资产复制进 Git。
 
 ## 在已有 Isaac Sim 5.1 环境接入
 
-使用已具备表中基础依赖的 Linux / NVIDIA CUDA 环境。安装本仓库的 Python 源码时使用 `--no-deps`，避免把已验证的 Torch / Isaac 栈自动升级：
+使用已具备表中基础依赖的 Linux / NVIDIA CUDA 环境。安装时使用 `--no-deps`，避免把已验证的 Torch / Isaac 栈自动升级。Isaac Lab 不在本仓库中，请在仓库外检出上面记录的 commit 再安装：
 
 ```bash
-python -m pip install --no-deps -e training/IsaacLab/source/isaaclab \
-  -e training/IsaacLab/source/isaaclab_assets \
-  -e training/IsaacLab/source/isaaclab_tasks \
-  -e training/IsaacLab/source/isaaclab_rl
+git clone https://github.com/isaac-sim/IsaacLab.git "$HOME/IsaacLab"
+git -C "$HOME/IsaacLab" checkout 37ddf626871758333d6ed89cf64ad702aef127d0
+python -m pip install --no-deps \
+  -e "$HOME/IsaacLab/source/isaaclab" \
+  -e "$HOME/IsaacLab/source/isaaclab_assets" \
+  -e "$HOME/IsaacLab/source/isaaclab_tasks" \
+  -e "$HOME/IsaacLab/source/isaaclab_rl"
 python -m pip install --no-deps -e training/runtime/source/rsl_rl \
   -e training/runtime/source/robot_lab
 ```
