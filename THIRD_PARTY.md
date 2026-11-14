@@ -12,8 +12,8 @@
 ## Isaac Lab
 
 - 上游：[isaac-sim/IsaacLab](https://github.com/isaac-sim/IsaacLab)。
-- 实际源 commit：`37ddf626871758333d6ed89cf64ad702aef127d0`。
-- 对应源码和 apps 保存于 `training/IsaacLab/`。
-- 许可证：[LICENSE](training/IsaacLab/LICENSE)、[LICENSE-mimic](training/IsaacLab/LICENSE-mimic)。
+- 历史 R6 使用的源 commit：[`37ddf626871758333d6ed89cf64ad702aef127d0`](https://github.com/isaac-sim/IsaacLab/tree/37ddf626871758333d6ed89cf64ad702aef127d0)。
+- 本仓库不再内置该框架快照。复现时请检出上述 commit，而不是查找已删除的 `training/IsaacLab/`。
+- 许可证：BSD-3-Clause [LICENSE](https://github.com/isaac-sim/IsaacLab/blob/37ddf626871758333d6ed89cf64ad702aef127d0/LICENSE)；Isaac Lab Mimic 为 Apache-2.0 [LICENSE-mimic](https://github.com/isaac-sim/IsaacLab/blob/37ddf626871758333d6ed89cf64ad702aef127d0/LICENSE-mimic)。
 
 Isaac Sim 运行库、NVIDIA 驱动、CUDA 和安装环境不在此仓库分发，需要遵循其各自的安装与使用条款。其他上游机器人的模型和预训练权重没有随本快照复制。
