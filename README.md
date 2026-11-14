@@ -48,7 +48,7 @@
 ## 下载与查看
 
 ```bash
-git clone --branch codex/headless-v67 --single-branch https://github.com/Kitjesen/orix.git
+git clone --branch headless-v67 --single-branch https://github.com/Kitjesen/orix.git
 cd orix
 python tools/validate_training_asset.py
 ```
@@ -75,6 +75,6 @@ python tools/validate_training_asset.py
 
 ## 原始设计与历史版本
 
-`design/v67_continuous_head_tail/` 保留带头的原始 CAD 设计与分件，是本模型的构建来源；无头状态由当前 URDF 和构建脚本定义。本分支保留的旧头部网格没有被当前 URDF 引用。原带头版图片保留在 `docs/images/`，当前无头图片位于 `docs/images/headless/`。
+`design/v67_continuous_head_tail/` 保留带头的原始 CAD 设计与分件，是本模型的构建来源；无头状态由当前 URDF 和构建脚本定义。训练资产中原先未被当前 URDF 引用的头部、耳朵、面罩和摄像头网格已删除，原始设计目录不受影响。原带头版图片保留在 `docs/images/`，当前无头图片位于 `docs/images/headless/`。
 
 原 MoE-CTS R6 源码和发布记录见 [历史训练说明](training/README.md)及 [R6 release](https://github.com/Kitjesen/orix/releases/tag/v67-r6-16100)。原工程来源为 [Cain-A/smalldog](https://github.com/Cain-A/smalldog)，第三方代码和许可证见 [THIRD_PARTY.md](THIRD_PARTY.md)。

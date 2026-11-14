@@ -5,7 +5,7 @@ This directory is the portable asset used by the current SmallDog reinforcement-
 ## Contents
 
 - `urdf/smalldog_v67.urdf` — training URDF with local relative mesh references.
-- `meshes/` — 35 referenced STL files for the mechanism, V67 appearance, collision proxies, and trial packaging geometry.
+- `meshes/` — the 35 STL files referenced by the URDF: mechanism, retained V67 body appearance, collision proxies, and trial packaging geometry. Unreferenced head, ear, visor, and camera meshes are not stored here.
 - `config/model_contract.json` — mass, joint order, standing pose, joint limits, actuator caps, payload assumptions, and model limitations.
 - `config/standing_pose.yaml` — human-readable copy of the default joint pose.
 - `../../joint_motion_config.json` — training-side copy of the motion window and default pose.
@@ -50,4 +50,4 @@ Do not publish the URDF without its `meshes/` and `config/` directories.
 
 ## Head removal (2026-11-12)
 
-Removed head shells, face, visor, ears, camera/ear decorations, head mounting bridge and fasteners, and the 0.2 kg head electronics allowance. Removed mass: 0.569494988605 kg. Base mass, COM and inertia were rebuilt from the retained components. Body shells, battery, compute board, all leg geometry, joint axes, limits and standing angles remain unchanged. The USD version is new to avoid reusing the headed asset cache.
+Removed head shells, face, visor, ears, camera/ear decorations, head mounting bridge and fasteners, and the 0.2 kg head electronics allowance. Removed mass: 0.569494988605 kg. Base mass, COM and inertia were rebuilt from the retained components. Body shells, battery, compute board, all leg geometry, joint axes, limits and standing angles remain unchanged. The USD version is new to avoid reusing the headed asset cache. STL copies of those removed parts are not kept in this directory; the original CAD remains in `design/v67_continuous_head_tail/`.
