@@ -1,6 +1,6 @@
-# ORIX · 无头版 SmallDog V67（URDF + mesh）
+# Lope · 无头版 SmallDog V67（URDF + mesh）
 
-本目录是无头仿真模型 **`v67_sim_r5_headless`** 的 URDF 与 mesh 包。关节限位、惯量、连杆结构和几何与 `headless-v67` 上的原文件一致，只调整了目录位置。
+本目录是 Lope 的无头仿真模型 **`v67_sim_r5_headless`** URDF 与 mesh 包。关节限位、惯量、连杆结构和几何与 `headless-v67` 上的原文件一致，只调整了目录位置。
 
 ## 文件
 
