@@ -1,6 +1,6 @@
 # Lope
 
-这是 Lope 的无头 URDF 与 mesh 包。
+Lope 四足机器人模型。
 
 URDF：`urdf/lope.urdf`
 
