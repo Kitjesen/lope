@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<robot name="v67_sim_r5_headless">
-  <!--V67 simulation: geometry-derived shell inertia; estimated payload; sampled joint motion window.-->
+<robot name="lope">
+  <!--Lope simulation: geometry-derived shell inertia; estimated payload; sampled joint motion window.-->
   <link name="base_link">
     <inertial>
       <origin xyz="0.000673072100175 2.01971985623e-06 0.0604449763446" rpy="0 0 0" />
@@ -12,16 +12,16 @@
       <geometry>
         <mesh filename="../meshes/base_link.STL" />
       </geometry>
-      <material name="v67_base_link">
+      <material name="lope_base_link">
         <color rgba="0.34901960784313724 0.39215686274509803 0.4235294117647059 1" />
       </material>
     </visual>
-    <visual name="orix_board_envelope_trial">
+    <visual name="lope_board_envelope_trial">
       <origin xyz="0 0 0.110" rpy="0 0 0" />
       <geometry>
         <box size="0.220 0.120 0.002" />
       </geometry>
-      <material name="orix_board_teal">
+      <material name="lope_board_teal">
         <color rgba="0.12 0.55 0.45 1" />
       </material>
     </visual>
@@ -31,169 +31,169 @@
         <box size="0.26 0.2 0.12" />
       </geometry>
     </collision>
-    <visual name="v67_body_upper">
+    <visual name="lope_body_upper">
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="../meshes/v67_visual_preview/body_upper.stl" scale="0.001 0.001 0.001" />
+        <mesh filename="../meshes/lope_visual_preview/body_upper.stl" scale="0.001 0.001 0.001" />
       </geometry>
-      <material name="v67_body_upper">
+      <material name="lope_body_upper">
         <color rgba="0.9254901960784314 0.9215686274509803 0.8980392156862745 1" />
       </material>
     </visual>
-    <visual name="v67_body_right_upper">
+    <visual name="lope_body_right_upper">
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="../meshes/v67_visual_preview/body_right_paint_upper.stl" scale="0.001 0.001 0.001" />
+        <mesh filename="../meshes/lope_visual_preview/body_right_paint_upper.stl" scale="0.001 0.001 0.001" />
       </geometry>
-      <material name="v67_body_right_upper">
+      <material name="lope_body_right_upper">
         <color rgba="0.9254901960784314 0.9215686274509803 0.8980392156862745 1" />
       </material>
     </visual>
-    <visual name="v67_body_right_lower">
+    <visual name="lope_body_right_lower">
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="../meshes/v67_visual_preview/body_right_paint_lower.stl" scale="0.001 0.001 0.001" />
+        <mesh filename="../meshes/lope_visual_preview/body_right_paint_lower.stl" scale="0.001 0.001 0.001" />
       </geometry>
-      <material name="v67_body_right_lower">
+      <material name="lope_body_right_lower">
         <color rgba="0.2235294117647059 0.27058823529411763 0.2980392156862745 1" />
       </material>
     </visual>
-    <visual name="v67_body_left_upper">
+    <visual name="lope_body_left_upper">
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="../meshes/v67_visual_preview/body_left_paint_upper.stl" scale="0.001 0.001 0.001" />
+        <mesh filename="../meshes/lope_visual_preview/body_left_paint_upper.stl" scale="0.001 0.001 0.001" />
       </geometry>
-      <material name="v67_body_left_upper">
+      <material name="lope_body_left_upper">
         <color rgba="0.9254901960784314 0.9215686274509803 0.8980392156862745 1" />
       </material>
     </visual>
-    <visual name="v67_body_left_lower">
+    <visual name="lope_body_left_lower">
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="../meshes/v67_visual_preview/body_left_paint_lower.stl" scale="0.001 0.001 0.001" />
+        <mesh filename="../meshes/lope_visual_preview/body_left_paint_lower.stl" scale="0.001 0.001 0.001" />
       </geometry>
-      <material name="v67_body_left_lower">
+      <material name="lope_body_left_lower">
         <color rgba="0.2235294117647059 0.27058823529411763 0.2980392156862745 1" />
       </material>
     </visual>
-    <visual name="v67_body_lower">
+    <visual name="lope_body_lower">
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="../meshes/v67_visual_preview/body_lower.stl" scale="0.001 0.001 0.001" />
+        <mesh filename="../meshes/lope_visual_preview/body_lower.stl" scale="0.001 0.001 0.001" />
       </geometry>
-      <material name="v67_body_lower">
+      <material name="lope_body_lower">
         <color rgba="0.2235294117647059 0.27058823529411763 0.2980392156862745 1" />
       </material>
     </visual>
-    <visual name="v67_body_front_panel">
+    <visual name="lope_body_front_panel">
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="../meshes/v67_visual_preview/body_front_panel.stl" scale="0.001 0.001 0.001" />
+        <mesh filename="../meshes/lope_visual_preview/body_front_panel.stl" scale="0.001 0.001 0.001" />
       </geometry>
-      <material name="v67_body_front_panel">
+      <material name="lope_body_front_panel">
         <color rgba="0.9254901960784314 0.9215686274509803 0.8980392156862745 1" />
       </material>
     </visual>
-    <visual name="v67_body_rear_panel">
+    <visual name="lope_body_rear_panel">
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="../meshes/v67_visual_preview/body_rear_panel.stl" scale="0.001 0.001 0.001" />
+        <mesh filename="../meshes/lope_visual_preview/body_rear_panel.stl" scale="0.001 0.001 0.001" />
       </geometry>
-      <material name="v67_body_rear_panel">
+      <material name="lope_body_rear_panel">
         <color rgba="0.9254901960784314 0.9215686274509803 0.8980392156862745 1" />
       </material>
     </visual>
-    <visual name="v67_mount_L_rear_lower">
+    <visual name="lope_mount_L_rear_lower">
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="../meshes/v67_visual_preview/mount_L_rear_lower.stl" scale="0.001 0.001 0.001" />
+        <mesh filename="../meshes/lope_visual_preview/mount_L_rear_lower.stl" scale="0.001 0.001 0.001" />
       </geometry>
-      <material name="v67_mount_L_rear_lower">
+      <material name="lope_mount_L_rear_lower">
         <color rgba="0.3176470588235294 0.3568627450980392 0.396078431372549 1" />
       </material>
     </visual>
-    <visual name="v67_mount_L_rear_upper">
+    <visual name="lope_mount_L_rear_upper">
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="../meshes/v67_visual_preview/mount_L_rear_upper.stl" scale="0.001 0.001 0.001" />
+        <mesh filename="../meshes/lope_visual_preview/mount_L_rear_upper.stl" scale="0.001 0.001 0.001" />
       </geometry>
-      <material name="v67_mount_L_rear_upper">
+      <material name="lope_mount_L_rear_upper">
         <color rgba="0.3176470588235294 0.3568627450980392 0.396078431372549 1" />
       </material>
     </visual>
-    <visual name="v67_mount_L_front_lower">
+    <visual name="lope_mount_L_front_lower">
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="../meshes/v67_visual_preview/mount_L_front_lower.stl" scale="0.001 0.001 0.001" />
+        <mesh filename="../meshes/lope_visual_preview/mount_L_front_lower.stl" scale="0.001 0.001 0.001" />
       </geometry>
-      <material name="v67_mount_L_front_lower">
+      <material name="lope_mount_L_front_lower">
         <color rgba="0.3176470588235294 0.3568627450980392 0.396078431372549 1" />
       </material>
     </visual>
-    <visual name="v67_mount_L_front_upper">
+    <visual name="lope_mount_L_front_upper">
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="../meshes/v67_visual_preview/mount_L_front_upper.stl" scale="0.001 0.001 0.001" />
+        <mesh filename="../meshes/lope_visual_preview/mount_L_front_upper.stl" scale="0.001 0.001 0.001" />
       </geometry>
-      <material name="v67_mount_L_front_upper">
+      <material name="lope_mount_L_front_upper">
         <color rgba="0.3176470588235294 0.3568627450980392 0.396078431372549 1" />
       </material>
     </visual>
-    <visual name="v67_mount_R_rear_lower">
+    <visual name="lope_mount_R_rear_lower">
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="../meshes/v67_visual_preview/mount_R_rear_lower.stl" scale="0.001 0.001 0.001" />
+        <mesh filename="../meshes/lope_visual_preview/mount_R_rear_lower.stl" scale="0.001 0.001 0.001" />
       </geometry>
-      <material name="v67_mount_R_rear_lower">
+      <material name="lope_mount_R_rear_lower">
         <color rgba="0.3176470588235294 0.3568627450980392 0.396078431372549 1" />
       </material>
     </visual>
-    <visual name="v67_mount_R_rear_upper">
+    <visual name="lope_mount_R_rear_upper">
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="../meshes/v67_visual_preview/mount_R_rear_upper.stl" scale="0.001 0.001 0.001" />
+        <mesh filename="../meshes/lope_visual_preview/mount_R_rear_upper.stl" scale="0.001 0.001 0.001" />
       </geometry>
-      <material name="v67_mount_R_rear_upper">
+      <material name="lope_mount_R_rear_upper">
         <color rgba="0.3176470588235294 0.3568627450980392 0.396078431372549 1" />
       </material>
     </visual>
-    <visual name="v67_mount_R_front_lower">
+    <visual name="lope_mount_R_front_lower">
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="../meshes/v67_visual_preview/mount_R_front_lower.stl" scale="0.001 0.001 0.001" />
+        <mesh filename="../meshes/lope_visual_preview/mount_R_front_lower.stl" scale="0.001 0.001 0.001" />
       </geometry>
-      <material name="v67_mount_R_front_lower">
+      <material name="lope_mount_R_front_lower">
         <color rgba="0.3176470588235294 0.3568627450980392 0.396078431372549 1" />
       </material>
     </visual>
-    <visual name="v67_mount_R_front_upper">
+    <visual name="lope_mount_R_front_upper">
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="../meshes/v67_visual_preview/mount_R_front_upper.stl" scale="0.001 0.001 0.001" />
+        <mesh filename="../meshes/lope_visual_preview/mount_R_front_upper.stl" scale="0.001 0.001 0.001" />
       </geometry>
-      <material name="v67_mount_R_front_upper">
+      <material name="lope_mount_R_front_upper">
         <color rgba="0.3176470588235294 0.3568627450980392 0.396078431372549 1" />
       </material>
     </visual>
-    <collision name="v67_belly">
+    <collision name="lope_belly">
       <origin xyz="-0.004 0 0.009" rpy="0 0 0" />
       <geometry>
         <box size="0.26 0.212 0.031" />
       </geometry>
     </collision>
-    <collision name="v67_side_-1">
+    <collision name="lope_side_-1">
       <origin xyz="-0.004 -0.109 0.07" rpy="0 0 0" />
       <geometry>
         <box size="0.246 0.012 0.105" />
       </geometry>
     </collision>
-    <collision name="v67_side_1">
+    <collision name="lope_side_1">
       <origin xyz="-0.004 0.109 0.07" rpy="0 0 0" />
       <geometry>
         <box size="0.246 0.012 0.105" />
       </geometry>
     </collision>
-    <collision name="v67_upper">
+    <collision name="lope_upper">
       <geometry>
         <mesh filename="../meshes/collision_upper.stl" />
       </geometry>
@@ -264,7 +264,7 @@
       <geometry>
         <mesh filename="../meshes/fr_hip_Link.STL" />
       </geometry>
-      <material name="v67_fr_hip_Link">
+      <material name="lope_fr_hip_Link">
         <color rgba="0.34901960784313724 0.39215686274509803 0.4235294117647059 1" />
       </material>
     </visual>
@@ -299,7 +299,7 @@
       <geometry>
         <mesh filename="../meshes/fr_thigh_Link.STL" />
       </geometry>
-      <material name="v67_fr_thigh_Link">
+      <material name="lope_fr_thigh_Link">
         <color rgba="0.7137254901960784 0.7529411764705882 0.7803921568627451 1" />
       </material>
     </visual>
@@ -340,7 +340,7 @@
       <geometry>
         <mesh filename="../meshes/fr_calf_Link.STL" />
       </geometry>
-      <material name="v67_fr_calf_Link">
+      <material name="lope_fr_calf_Link">
         <color rgba="0.34901960784313724 0.39215686274509803 0.4235294117647059 1" />
       </material>
     </visual>
@@ -381,7 +381,7 @@
       <geometry>
         <mesh filename="../meshes/fr_foot_Link.STL" />
       </geometry>
-      <material name="v67_fr_foot_Link">
+      <material name="lope_fr_foot_Link">
         <color rgba="0.09411764705882353 0.12941176470588237 0.1568627450980392 1" />
       </material>
     </visual>
@@ -409,7 +409,7 @@
       <geometry>
         <mesh filename="../meshes/fl_hip_Link.STL" />
       </geometry>
-      <material name="v67_fl_hip_Link">
+      <material name="lope_fl_hip_Link">
         <color rgba="0.34901960784313724 0.39215686274509803 0.4235294117647059 1" />
       </material>
     </visual>
@@ -444,7 +444,7 @@
       <geometry>
         <mesh filename="../meshes/fl_thigh_Link.STL" />
       </geometry>
-      <material name="v67_fl_thigh_Link">
+      <material name="lope_fl_thigh_Link">
         <color rgba="0.7137254901960784 0.7529411764705882 0.7803921568627451 1" />
       </material>
     </visual>
@@ -485,7 +485,7 @@
       <geometry>
         <mesh filename="../meshes/fl_calf_Link.STL" />
       </geometry>
-      <material name="v67_fl_calf_Link">
+      <material name="lope_fl_calf_Link">
         <color rgba="0.34901960784313724 0.39215686274509803 0.4235294117647059 1" />
       </material>
     </visual>
@@ -526,7 +526,7 @@
       <geometry>
         <mesh filename="../meshes/fl_foot_Link.STL" />
       </geometry>
-      <material name="v67_fl_foot_Link">
+      <material name="lope_fl_foot_Link">
         <color rgba="0.09411764705882353 0.12941176470588237 0.1568627450980392 1" />
       </material>
     </visual>
@@ -554,7 +554,7 @@
       <geometry>
         <mesh filename="../meshes/rr_hip_Link.STL" />
       </geometry>
-      <material name="v67_rr_hip_Link">
+      <material name="lope_rr_hip_Link">
         <color rgba="0.34901960784313724 0.39215686274509803 0.4235294117647059 1" />
       </material>
     </visual>
@@ -589,7 +589,7 @@
       <geometry>
         <mesh filename="../meshes/rr_thigh_Link.STL" />
       </geometry>
-      <material name="v67_rr_thigh_Link">
+      <material name="lope_rr_thigh_Link">
         <color rgba="0.7137254901960784 0.7529411764705882 0.7803921568627451 1" />
       </material>
     </visual>
@@ -630,7 +630,7 @@
       <geometry>
         <mesh filename="../meshes/rr_calf_Link.STL" />
       </geometry>
-      <material name="v67_rr_calf_Link">
+      <material name="lope_rr_calf_Link">
         <color rgba="0.34901960784313724 0.39215686274509803 0.4235294117647059 1" />
       </material>
     </visual>
@@ -671,7 +671,7 @@
       <geometry>
         <mesh filename="../meshes/rr_foot_Link.STL" />
       </geometry>
-      <material name="v67_rr_foot_Link">
+      <material name="lope_rr_foot_Link">
         <color rgba="0.09411764705882353 0.12941176470588237 0.1568627450980392 1" />
       </material>
     </visual>
@@ -699,7 +699,7 @@
       <geometry>
         <mesh filename="../meshes/rl_hip_Link.STL" />
       </geometry>
-      <material name="v67_rl_hip_Link">
+      <material name="lope_rl_hip_Link">
         <color rgba="0.34901960784313724 0.39215686274509803 0.4235294117647059 1" />
       </material>
     </visual>
@@ -734,7 +734,7 @@
       <geometry>
         <mesh filename="../meshes/rl_thigh_Link.STL" />
       </geometry>
-      <material name="v67_rl_thigh_Link">
+      <material name="lope_rl_thigh_Link">
         <color rgba="0.7137254901960784 0.7529411764705882 0.7803921568627451 1" />
       </material>
     </visual>
@@ -775,7 +775,7 @@
       <geometry>
         <mesh filename="../meshes/rl_calf_Link.STL" />
       </geometry>
-      <material name="v67_rl_calf_Link">
+      <material name="lope_rl_calf_Link">
         <color rgba="0.34901960784313724 0.39215686274509803 0.4235294117647059 1" />
       </material>
     </visual>
@@ -816,7 +816,7 @@
       <geometry>
         <mesh filename="../meshes/rl_foot_Link.STL" />
       </geometry>
-      <material name="v67_rl_foot_Link">
+      <material name="lope_rl_foot_Link">
         <color rgba="0.09411764705882353 0.12941176470588237 0.1568627450980392 1" />
       </material>
     </visual>

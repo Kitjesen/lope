@@ -1,8 +1,8 @@
-# Lope · 无头版 SmallDog V67
+# Lope
 
-这是 Lope 的无头 v67 URDF 与 mesh 包，模型名为 `v67_sim_r5_headless`。
+这是 Lope 的无头 URDF 与 mesh 包。
 
-URDF：`urdf/smalldog_v67.urdf`
+URDF：`urdf/lope.urdf`
 
 mesh：`meshes/`
 
