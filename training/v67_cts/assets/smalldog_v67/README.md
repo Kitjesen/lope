@@ -51,3 +51,10 @@ Do not publish the URDF without its `meshes/` and `config/` directories.
 ## Head removal (2026-11-12)
 
 Removed head shells, face, visor, ears, camera/ear decorations, head mounting bridge and fasteners, and the 0.2 kg head electronics allowance. Removed mass: 0.569494988605 kg. Base mass, COM and inertia were rebuilt from the retained components. Body shells, battery, compute board, all leg geometry, joint axes, limits and standing angles remain unchanged. The USD version is new to avoid reusing the headed asset cache.
+
+## Alternate 270-degree thigh-window URDF (2026-11-16)
+
+- `urdf/smalldog_v67_window270.urdf` — user-supplied alternate URDF with the same relative mesh set.
+- `config/window270_joint_limits.json` — extracted limits, source hash, and validation metadata.
+- This variant is not selected by the current training configuration. The canonical training asset remains `urdf/smalldog_v67.urdf`.
+- The front thigh reference window is `[-1.5708, 3.1416]` rad; the rear thigh reference window is `[0, 4.7124]` rad. These are narrower or shifted relative to the canonical training window and should be treated as a separate experiment.

@@ -1,0 +1,71 @@
+{
+  "version": "v67_sim_r5_headless_window270",
+  "source_file": "smalldog_v67(3).urdf",
+  "published_urdf": "urdf/smalldog_v67_window270.urdf",
+  "source_sha256": "E6794C3E78E7E9F419D3FF8F3ED866F27BF2AFBCEA8159C8F99180F86C14FF1C",
+  "active_training_asset": false,
+  "note": "User-supplied alternate URDF; current training asset remains urdf/smalldog_v67.urdf.",
+  "thigh_reference_frame": {
+    "zero": "thigh vertically downward",
+    "positive_direction": "backward",
+    "front_limits_rad": [
+      -1.5708,
+      3.1416
+    ],
+    "rear_limits_rad": [
+      0.0,
+      4.7124
+    ]
+  },
+  "joint_limits_rad": {
+    "fr_hip_joint": [
+      -1.05,
+      1.05
+    ],
+    "fr_thigh_joint": [
+      -3.1416,
+      1.5708
+    ],
+    "fr_calf_joint": [
+      0.4,
+      2.1
+    ],
+    "fl_hip_joint": [
+      -1.05,
+      1.05
+    ],
+    "fl_thigh_joint": [
+      -1.5708,
+      3.1416
+    ],
+    "fl_calf_joint": [
+      -2.1,
+      -0.4
+    ],
+    "rr_hip_joint": [
+      -1.05,
+      1.05
+    ],
+    "rr_thigh_joint": [
+      -1.5708,
+      3.1416
+    ],
+    "rr_calf_joint": [
+      0.4,
+      2.1
+    ],
+    "rl_hip_joint": [
+      -1.05,
+      1.05
+    ],
+    "rl_thigh_joint": [
+      -3.1416,
+      1.5708
+    ],
+    "rl_calf_joint": [
+      -2.1,
+      -0.4
+    ]
+  },
+  "mesh_reference_check": "passed"
+}
